@@ -4,8 +4,8 @@ import Serie from "../Serie";
 import BoxView from '../BoxView';
 import Actions from '../Actions';
 
-import styles from './ContentBox.module.scss';
 import ResultView from '../ResultView';
+import styles from './ContentBox.module.scss';
 
 const ContentBox: FC = () => {
 

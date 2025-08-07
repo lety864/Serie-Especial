@@ -2,14 +2,34 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #242424;
+  background: linear-gradient(30deg, #EB6A60, #004F72);
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   text-align: center;
 }
 
-body {
-  display: flex;
+.box{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5px;
+  grid-auto-rows: minmax(56rem, auto);
+  align-items: center;
   justify-content: center;
 }
 
+.box1 {
+  background-color: #c7b7b727;
+  grid-column-start: span 1;
+  margin: 5px;
+  padding: 10px;
+  height: 95%;
+  box-shadow:  0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.box2{
+  padding: 15px;
+  background-color: rgba(159, 159, 167, 0.089);
+  margin: 100px;
+  align-items: center;
+  box-shadow:  0 0 15px rgba(255, 255, 255, 0.2);
+}

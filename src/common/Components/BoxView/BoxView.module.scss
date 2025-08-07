@@ -1,7 +1,10 @@
 .box1{
-    background-color: rgba(157, 160, 185, 0.274);
+    background-color: rgba(166, 136, 214, 0.075);
+    margin: 20px;
     padding: 12px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    align-items: center;
 }
