@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2023",
+    // "target": "ES2023",
+    "target": "ESNext",
+    "jsx":"react-jsx",
     "lib": ["ES2023"],
     "module": "ESNext",
     "skipLibCheck": true,

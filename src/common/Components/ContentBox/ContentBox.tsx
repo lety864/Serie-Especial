@@ -1,10 +1,10 @@
 import { useState, type FC} from 'react';
 
-import Serie from "../Serie";
 import BoxView from '../BoxView';
 import Actions from '../Actions';
-
 import ResultView from '../ResultView';
+import Serie from '../../utils/Serie/Serie';
+
 import styles from './ContentBox.module.scss';
 
 const ContentBox: FC = () => {
