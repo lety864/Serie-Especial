@@ -10,11 +10,18 @@ import styles from './ContentBox.module.scss';
 const ContentBox: FC = () => {
 
     const [numero, setNumero] = useState<string>('');
-    const [resultado, setResultado] = useState<number | null>(null);
+    const [resultado, setResultado] = useState<number | null |string>(null);
+    const [msg, setmsg] = useState<string>('');
 
     const calcularSerie = () => {
-        const valor = Serie.calcularTermino(Number(numero));
-        setResultado(valor);
+        if(Number(numero) <= 10){
+            const valor = Serie.calcularTermino(Number(numero));
+            setResultado(valor);
+            setmsg('El Resultado es: ');
+        }else{
+            setmsg('Numero no valido');
+            setResultado('');
+        }
     }
 
     return(
@@ -28,14 +35,14 @@ const ContentBox: FC = () => {
         onClick={calcularSerie}
         placeholder='Ingresa un numero'
         type='text'
-        buttonText='Calcular Serie'
+        buttonText='Calcular n'
         />
         
         <div className={styles.box1}>
             {resultado !== null && (
                 <ResultView 
                 title='Resultado'
-                texto='El Resultado es:'
+                texto={msg}
                 value={resultado}
                 />
             )}

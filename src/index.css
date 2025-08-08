@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background: linear-gradient(30deg, #EB6A60, #004F72);
+  background: linear-gradient(30deg, #EB6A60, #004F73);
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   text-align: center;
@@ -23,7 +23,8 @@
   margin: 5px;
   padding: 10px;
   height: 95%;
-  box-shadow:  0 0 15px rgba(255, 255, 255, 0.2);
+  box-shadow:  0 0 15px rgba(255, 255, 255, 0.699);
+  border-radius: 10px;
 }
 
 .box2{
@@ -31,5 +32,6 @@
   background-color: rgba(159, 159, 167, 0.089);
   margin: 100px;
   align-items: center;
-  box-shadow:  0 0 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.699);
+  border-radius: 10px;
 }

@@ -12,8 +12,8 @@ const AppView: FC = () => {
                 <p>Leticia Bermudez</p>
             </div>
             <div className={styles.boxContent}>
-                <h3>Prueba Tecnica</h3>
-                <p>Dada la Serie Numerica, entregar el termino <strong>n</strong>:</p>
+                <h3>Calculo del n-esimo numero</h3>
+                <p>Dada la Serie Numerica, entregar el termino <strong>n</strong>utilizando los 10 numero naturales:</p>
                   <p className={styles.formula}>
                     <span className={styles.func}>serie(n)</span> = 
                     <span className={styles.func}>primo(n+1)</span> – 

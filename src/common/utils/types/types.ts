@@ -1,7 +1,7 @@
 export type ResultProps = {
     title: string;
     texto: string;
-    value: number;
+    value: number | string;
 }
 
 export type InputButtonProps = {
